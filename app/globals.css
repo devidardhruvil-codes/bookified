@@ -123,6 +123,10 @@
 
   /* Layout dimensions */
   --navbar-height: 74px;
+
+  /* font */
+  --font-mona-sans: 'Mona Sans', sans-serif;
+  --font-ibm-plex-serif: 'IBM Plex Serif', serif;
 }
 
 .dark {
