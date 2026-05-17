@@ -137,6 +137,7 @@ const UploadForm = () => {
         }
         return;
       }
+      debugger;
 
       if (book.alreadyExists) {
         toast.info("Book with same title already exists.");
@@ -145,19 +146,23 @@ const UploadForm = () => {
         return;
       }
 
+      debugger;
       const segments = await saveBookSegments(
         book.data._id,
         userId,
         parsedPDF.content,
       );
+      debugger;
 
       if (!segments.success) {
         toast.error("Failed to save book segments");
         throw new Error("Failed to save book segments");
       }
+      debugger;
 
       form.reset();
       router.push("/");
+      debugger;
     } catch (error) {
       console.error(error);
 
